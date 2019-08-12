@@ -1,16 +1,24 @@
 import React from "react"
 import styled from "styled-components"
 
-import { Logo } from "../Logo/Logo"
-import { NavHamburger } from "../Nav/NavHamburger"
+import { Logo } from "../Logo/"
+import { Nav, NavHamburger } from "../Nav/"
+import { Toggle } from "../Toggle/"
 
 export const Header = () => (
   <header>
     <HeaderWrapper>
       <Logo />
-      <HeaderHamburgerButton type="button">
-        <NavHamburger />
-      </HeaderHamburgerButton>
+      <Toggle>
+        {({ isOpen, toggle }) => (
+          <>
+            <HeaderHamburgerButton onClick={toggle} type="button">
+              <NavHamburger />
+            </HeaderHamburgerButton>
+            <Nav isOpen={isOpen} />
+          </>
+        )}
+      </Toggle>
     </HeaderWrapper>
   </header>
 )
