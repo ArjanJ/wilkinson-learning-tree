@@ -1,9 +1,9 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
-import { Logo } from "../Logo/"
-import { Nav, NavHamburger } from "../Nav/"
-import { Toggle } from "../Toggle/"
+import { Logo } from "../Logo/";
+import { Nav, NavHamburger } from "../Nav/";
+import { Toggle } from "../Toggle/";
 
 export const Header = () => (
   <header>
@@ -15,13 +15,13 @@ export const Header = () => (
             <HeaderHamburgerButton onClick={toggle} type="button">
               <NavHamburger />
             </HeaderHamburgerButton>
-            <Nav isOpen={isOpen} />
+            <Nav isOpen={isOpen} toggle={toggle} />
           </>
         )}
       </Toggle>
     </HeaderWrapper>
   </header>
-)
+);
 
 const HeaderWrapper = styled.div`
   align-items: center;
@@ -29,7 +29,7 @@ const HeaderWrapper = styled.div`
   height: 60px;
   justify-content: space-between;
   padding: 0 15px;
-`
+`;
 const HeaderHamburgerButton = styled.button`
   background: none;
-`
+`;
