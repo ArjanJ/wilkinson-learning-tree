@@ -8,6 +8,7 @@ import { philosophyIconList } from "../Home/HomePhilosophy";
 import { Abc, KidBall, TwoPeople } from "../Icons/";
 import { IconList } from "../IconList/";
 import { PageHeading } from "../PageHeading/";
+import { PageSubheading } from "../PageSubheading/";
 import { Section } from "../Section/";
 import { Wrapper } from "../Wrapper/";
 
@@ -61,7 +62,7 @@ export const ServicesHero = () => (
           </p>
         </Box>
         <Box mb="45px">
-          <Subheading>Our Philosophy</Subheading>
+          <PageSubheading>Our Philosophy</PageSubheading>
           <p>
             “In the field of early childhood education we hold a certain set of
             beliefs when it comes to the care and education of young children...
@@ -92,11 +93,6 @@ export const ServicesHero = () => (
 
 const BoldText = styled.strong`
   font-family: "Gilroy";
-`;
-
-const Subheading = styled.h2`
-  font-size: 18px;
-  margin-bottom: 22px;
 `;
 
 const AboutPlug = styled.div`

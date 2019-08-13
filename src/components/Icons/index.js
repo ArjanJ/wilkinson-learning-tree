@@ -1,8 +1,13 @@
 export { Abc } from "./Abc";
 export { Book } from "./Book";
+export { Books } from "./Books";
+export { Chalkboard } from "./Chalkboard";
 export { Close } from "./Close";
+export { Diploma } from "./Diploma";
+export { FirstAid } from "./FirstAid";
 export { GlobeHands } from "./GlobeHands";
 export { KidBall } from "./KidBall";
 export { Painting } from "./Painting";
 export { PaperApple } from "./PaperApple";
+export { Speech } from "./Speech";
 export { TwoPeople } from "./TwoPeople";

@@ -1,0 +1,1 @@
+export { PageSubheading } from "./PageSubheading";
