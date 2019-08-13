@@ -5,6 +5,7 @@ export const colors = {
   LIGHT_GREY: "#F3F3F3",
   LIGHT_GREY_2: "#ebebeb",
   ORANGE: "#E3B34C",
+  WHITE: "#FFFFFF",
 };
 
 export const easing = {

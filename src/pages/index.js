@@ -1,12 +1,16 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { HomeHero, HomeImageStrip, HomePhilos } from "../components/Home/";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Maple Ridge Daycare - Wilkinson Learning Tree" />
+    <HomeHero />
+    <HomeImageStrip />
+    <HomePhilos />
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
