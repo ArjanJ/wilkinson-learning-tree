@@ -26,10 +26,10 @@ export const Footer = () => (
               10172 244th Street Maple Ridge, BC V2W 0H5
             </FooterText>
           </Box>
-          <FooterNavLink to="#">Our Services</FooterNavLink>
-          <FooterNavLink to="#">About Us</FooterNavLink>
-          <FooterNavLink to="#">Register Now</FooterNavLink>
-          <FooterNavLink to="#">Gallery</FooterNavLink>
+          <FooterNavLink to="/services">Our Services</FooterNavLink>
+          <FooterNavLink to="/about">About Us</FooterNavLink>
+          <FooterNavLink to="/register">Register Now</FooterNavLink>
+          <FooterNavLink to="/gallery">Gallery</FooterNavLink>
         </FooterNav>
       </Wrapper>
     </Section>

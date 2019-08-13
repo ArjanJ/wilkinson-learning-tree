@@ -7,7 +7,7 @@ import { Button } from "../Button/";
 import { Wrapper } from "../Wrapper/";
 
 export const Form = () => (
-  <form>
+  <form id="get-in-touch-form">
     <Background>
       <Wrapper>
         <Box mb="15px">

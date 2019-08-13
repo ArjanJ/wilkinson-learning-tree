@@ -1,12 +1,20 @@
 import { Link } from "gatsby";
 import React from "react";
 import { Box } from "rebass";
+import scrollToElement from "scroll-to-element";
 import styled from "styled-components";
 
 import { colors } from "../../utils/styleUtils";
 import { Button } from "../Button";
 import { Section } from "../Section";
 import { Wrapper } from "../Wrapper";
+
+const onGetInTouchClick = () =>
+  scrollToElement("#get-in-touch-form", {
+    offset: 0,
+    ease: "outCube",
+    duration: 800,
+  });
 
 export const HomeHero = () => (
   <HomeSection>
@@ -20,7 +28,12 @@ export const HomeHero = () => (
         </Subheading>
       </Box>
       <Box mb="15px">
-        <Button kind="primary" type="button" width="196px">
+        <Button
+          kind="primary"
+          onClick={onGetInTouchClick}
+          type="button"
+          width="196px"
+        >
           Get in touch
         </Button>
       </Box>
