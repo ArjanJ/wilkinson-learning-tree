@@ -1,3 +1,4 @@
+export { HomeAbout } from "./HomeAbout";
 export { HomeHero } from "./HomeHero";
 export { HomeImageStrip } from "./HomeImageStrip";
-export { HomePhilos } from "./HomePhilos";
+export { HomePhilosophy } from "./HomePhilosophy";

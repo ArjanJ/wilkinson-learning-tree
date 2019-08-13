@@ -1,6 +1,11 @@
 import React from "react";
 
-import { HomeHero, HomeImageStrip, HomePhilos } from "../components/Home/";
+import {
+  HomeAbout,
+  HomeHero,
+  HomeImageStrip,
+  HomePhilosophy,
+} from "../components/Home/";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -9,7 +14,8 @@ const IndexPage = () => (
     <SEO title="Maple Ridge Daycare - Wilkinson Learning Tree" />
     <HomeHero />
     <HomeImageStrip />
-    <HomePhilos />
+    <HomePhilosophy />
+    <HomeAbout />
   </Layout>
 );
 
