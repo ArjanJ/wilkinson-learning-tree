@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Form } from "../components/Form/";
 import {
   HomeAbout,
   HomeHero,
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <HomeImageStrip />
     <HomePhilosophy />
     <HomeAbout />
+    <Form />
   </Layout>
 );
 

@@ -20,12 +20,12 @@ export const HomeHero = () => (
         </Subheading>
       </Box>
       <Box mb="15px">
-        <Button kind="primary" type="button" width={196}>
+        <Button kind="primary" type="button" width="196px">
           Get in touch
         </Button>
       </Box>
       <Box>
-        <Button as={Link} kind="secondary" to="/services" width={196}>
+        <Button as={Link} kind="secondary" to="/services" width="196px">
           About our daycare
         </Button>
       </Box>

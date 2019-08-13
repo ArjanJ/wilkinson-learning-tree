@@ -32,7 +32,7 @@ export const Button = styled.button`
   font-weight: 700;
   height: 40px;
   justify-content: center;
-  min-width: ${({ width }) => `${width}px` || 0};
+  min-width: ${({ width }) => (width ? width : 0)};
   overflow: hidden;
   padding: 0 15px;
   position: relative;
