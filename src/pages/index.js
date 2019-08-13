@@ -12,7 +12,7 @@ import SEO from "../components/seo";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Maple Ridge Daycare - Wilkinson Learning Tree" />
+    <SEO />
     <HomeHero />
     <HomeImageStrip />
     <HomePhilosophy />

@@ -5,9 +5,10 @@ import scrollToElement from "scroll-to-element";
 import styled from "styled-components";
 
 import { colors } from "../../utils/styleUtils";
-import { Button } from "../Button";
-import { Section } from "../Section";
-import { Wrapper } from "../Wrapper";
+import { Button } from "../Button/";
+import { PageHeading } from "../PageHeading/";
+import { Section } from "../Section/";
+import { Wrapper } from "../Wrapper/";
 
 const onGetInTouchClick = () =>
   scrollToElement("#get-in-touch-form", {
@@ -20,7 +21,7 @@ export const HomeHero = () => (
   <HomeSection>
     <Wrapper>
       <Box mb="45px">
-        <Heading>Welcome to the Wilkinson Learning Tree</Heading>
+        <PageHeading>Welcome to the Wilkinson Learning Tree</PageHeading>
         <Subheading>
           We’re a <strong>family daycare</strong> in{" "}
           <strong>Maple Ridge</strong> specializing in care for children between{" "}
@@ -48,13 +49,6 @@ export const HomeHero = () => (
 
 const HomeSection = styled(Section)`
   text-align: center;
-`;
-
-const Heading = styled.h1`
-  color: ${colors.BLUE};
-  line-height: 1.25;
-  margin: 0 auto 22px;
-  max-width: 288px;
 `;
 
 const Subheading = styled.h2`

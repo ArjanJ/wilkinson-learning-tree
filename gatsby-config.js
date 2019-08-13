@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Maple Ridge Daycare - Wilkinson Learning Tree`,
+    description: `We’re a family daycare in Maple Ridge specializing in care for children between 1 and 5 years old.`,
+    author: `@arjanj`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

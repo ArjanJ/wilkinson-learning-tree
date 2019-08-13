@@ -7,7 +7,7 @@ import { Book, GlobeHands, Painting, PaperApple } from "../Icons";
 import { Section } from "../Section";
 import { Wrapper } from "../Wrapper";
 
-const philosophyIconList = [
+export const philosophyIconList = [
   {
     icon: <GlobeHands />,
     text: "Guide children in a positive and respectful manner.",
