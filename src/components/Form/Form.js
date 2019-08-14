@@ -7,7 +7,13 @@ import { Button } from "../Button/";
 import { Wrapper } from "../Wrapper/";
 
 export const Form = () => (
-  <form id="get-in-touch-form">
+  <form
+    method="post"
+    netlify-honeypot="bot-field"
+    data-netlify="true"
+    id="get-in-touch-form"
+  >
+    <input type="hidden" name="bot-field" />
     <Background>
       <Wrapper>
         <Box mb="22px">
