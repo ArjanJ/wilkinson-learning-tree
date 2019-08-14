@@ -108,6 +108,7 @@ const AboutPlugWrapper = styled(Wrapper)`
 const AboutPlugPic = styled.img`
   border-radius: 50%;
   display: flex;
+  flex: 1;
   height: 90px;
   width: 90px;
 `;

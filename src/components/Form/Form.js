@@ -10,11 +10,11 @@ export const Form = () => (
   <form id="get-in-touch-form">
     <Background>
       <Wrapper>
-        <Box mb="15px">
+        <Box mb="22px">
           <Heading>Get in touch!</Heading>
           <Subheading>
-            We look forward to welcoming you to the Wilkinson Learning Tree and
-            caring for your child.
+            We look forward to welcoming you to our daycare and caring for your
+            child.
           </Subheading>
         </Box>
         <Box mb="15px">

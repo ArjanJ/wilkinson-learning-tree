@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 
@@ -8,7 +9,9 @@ import { Toggle } from "../Toggle/";
 export const Header = () => (
   <header>
     <HeaderWrapper>
-      <Logo />
+      <HeaderLogoLink to="/">
+        <Logo />
+      </HeaderLogoLink>
       <Toggle>
         {({ isOpen, toggle }) => (
           <>
@@ -30,6 +33,11 @@ const HeaderWrapper = styled.div`
   justify-content: space-between;
   padding: 0 15px;
 `;
+
 const HeaderHamburgerButton = styled.button`
   background: none;
+`;
+
+const HeaderLogoLink = styled(Link)`
+  display: flex;
 `;

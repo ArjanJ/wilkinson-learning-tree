@@ -35,7 +35,7 @@ const qualificationsIconList = [
 export const About = () => (
   <Section>
     <Wrapper>
-      <Box mb="30px">
+      <Box mb="45px">
         <PageHeading textAlign="center">About Christine</PageHeading>
       </Box>
       <Box mb="30px">
