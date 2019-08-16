@@ -11,7 +11,7 @@ const theme = {
     z-index: 0;
 
     &::before {
-      background: ${darken(0.06, colors.BLUE)};
+      background: ${darken(0.08, colors.BLUE)};
     }
   `,
   secondary: css`
@@ -19,7 +19,11 @@ const theme = {
     color: ${colors.ORANGE};
 
     &::before {
-      background: ${rgba(colors.ORANGE, 0.1)};
+      background: ${colors.ORANGE};
+    }
+
+    &:hover {
+      color: ${colors.WHITE};
     }
   `,
 };

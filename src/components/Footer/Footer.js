@@ -45,7 +45,7 @@ const FooterNavLink = styled(Link)`
   display: block;
   font-family: "Gilroy";
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 22px;
   text-decoration: none;
 
   &:last-child {

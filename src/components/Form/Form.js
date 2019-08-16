@@ -1,8 +1,9 @@
+import { darken, lighten } from "polished";
 import React from "react";
 import { Box } from "rebass";
 import styled from "styled-components";
 
-import { colors } from "../../utils/styleUtils";
+import { colors, easing } from "../../utils/styleUtils";
 import { Button } from "../Button/";
 import { Wrapper } from "../Wrapper/";
 
@@ -20,10 +21,10 @@ export const Form = () => (
           <Heading>Get in touch!</Heading>
           <Subheading>
             We look forward to welcoming you to our daycare and caring for your
-            child.
+            child. We’ll be in touch with you as soon as possible, thank you.
           </Subheading>
         </Box>
-        <Box mb="15px">
+        <Box mb="22px">
           <Label htmlFor="name">Name</Label>
           <Input
             id="name"
@@ -33,7 +34,7 @@ export const Form = () => (
             type="text"
           />
         </Box>
-        <Box mb="15px">
+        <Box mb="22px">
           <Label htmlFor="email">Email</Label>
           <Input
             id="email"
@@ -43,17 +44,61 @@ export const Form = () => (
             type="email"
           />
         </Box>
-        <Box mb="30px">
-          <Label htmlFor="message">Message</Label>
-          <Textarea
-            id="message"
-            name="message"
-            placeholder="Your message"
+        <Box mb="22px">
+          <Label htmlFor="phone">Phone Number</Label>
+          <Input
+            id="phone"
+            inputmode="numeric"
+            name="phone"
+            pattern="[0-9]*"
+            placeholder="Your phone number"
             required={true}
+            type="text"
           />
         </Box>
+        <Box mb="30px">
+          <Label htmlFor="message">Number of children needing daycare</Label>
+          <RadioWrapper>
+            <RadioBox>
+              <RadioInput
+                id="numberOfChildren1"
+                name="numberOfChildren"
+                value="1"
+                type="radio"
+              />
+              <RadioLabel htmlFor="numberOfChildren1">1</RadioLabel>
+            </RadioBox>
+            <RadioBox>
+              <RadioInput
+                id="numberOfChildren2"
+                name="numberOfChildren"
+                value="2"
+                type="radio"
+              />
+              <RadioLabel htmlFor="numberOfChildren2">2</RadioLabel>
+            </RadioBox>
+            <RadioBox>
+              <RadioInput
+                id="numberOfChildren3"
+                name="numberOfChildren"
+                value="3"
+                type="radio"
+              />
+              <RadioLabel htmlFor="numberOfChildren3">3</RadioLabel>
+            </RadioBox>
+            <RadioBox>
+              <RadioInput
+                id="numberOfChildren4+"
+                name="numberOfChildren"
+                value="4+"
+                type="radio"
+              />
+              <RadioLabel htmlFor="numberOfChildren4+">4+</RadioLabel>
+            </RadioBox>
+          </RadioWrapper>
+        </Box>
         <Button kind="primary" type="submit" width="100%">
-          Send message
+          Send
         </Button>
       </Wrapper>
     </Background>
@@ -61,14 +106,14 @@ export const Form = () => (
 );
 
 const Background = styled.div`
-  background: ${colors.GREEN};
-  padding: 30px 0;
+  background: ${colors.ORANGE};
+  padding: 45px 0;
 `;
 
 const Heading = styled.h3`
   color: ${colors.WHITE};
-  font-size: 24px;
-  margin-bottom: 6px;
+  font-size: 30px;
+  margin-bottom: 15px;
   text-align: center;
 `;
 
@@ -82,16 +127,32 @@ const Label = styled.label`
   display: block;
   color: white;
   font-family: "Gilroy";
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 `;
+
 const Input = styled.input`
+  border: 2px solid white;
+  height: 45px;
+  border-radius: 3px;
+  padding: 0 15px;
+  transition: all 0.3s ${easing.OUT};
+  width: 100%;
+
+  &:active,
+  &:focus {
+    border-color: ${colors.BLUE};
+  }
+`;
+
+const Select = styled.select`
   height: 45px;
   border-radius: 3px;
   padding: 0 15px;
   width: 100%;
 `;
+
 const Textarea = styled.textarea`
   border-radius: 3px;
   border: none;
@@ -99,4 +160,49 @@ const Textarea = styled.textarea`
   min-height: 90px;
   padding: 12px 15px;
   width: 100%;
+`;
+
+const RadioWrapper = styled.div`
+  display: flex;
+`;
+
+const RadioBox = styled(Box)`
+  flex: 1;
+
+  &:first-child {
+    label {
+      border-left: none;
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
+    }
+  }
+
+  &:last-child {
+    label {
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+  }
+`;
+
+const RadioLabel = styled.label`
+  align-items: center;
+  background: white;
+  border-left: 1px solid ${colors.LIGHT_GREY_2};
+  color: ${colors.MID_GREY};
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  height: 45px;
+  justify-content: center;
+  transition: all 0.3s ${easing.OUT};
+`;
+
+const RadioInput = styled.input`
+  display: none;
+
+  &:checked + label {
+    background: ${lighten(0.25, colors.BLUE)};
+    color: ${darken(0.1, colors.BLUE)};
+  }
 `;
