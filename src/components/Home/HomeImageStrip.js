@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+import { mq } from "../../utils/styleUtils";
 import { Image } from "../image";
 
 export const HomeImageStrip = () => {
@@ -17,5 +18,9 @@ export const HomeImageStrip = () => {
 const Wrapper = styled.div`
   > div {
     max-height: 180px;
+  }
+
+  @media ${mq.MOBILE} {
+    display: none;
   }
 `;

@@ -14,3 +14,7 @@ export const easing = {
   IN_OUT: "cubic-bezier(0.86, 0, 0.07, 1)",
   OUT: "cubic-bezier(0.23, 1, 0.32, 1)",
 };
+
+export const mq = {
+  MOBILE: `(min-width: 540px)`,
+};
