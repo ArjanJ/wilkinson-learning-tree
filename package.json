@@ -13,7 +13,9 @@
     "gatsby-plugin-react-helmet": "^3.1.2",
     "gatsby-plugin-sharp": "^2.2.9",
     "gatsby-plugin-styled-components": "^3.1.2",
+    "gatsby-plugin-theme-ui": "^0.2.34",
     "gatsby-source-filesystem": "^2.1.7",
+    "gatsby-theme-gallery": "^1.0.1",
     "gatsby-transformer-sharp": "^2.2.5",
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",
@@ -23,6 +25,7 @@
     "rebass": "^4.0.2",
     "scroll-to-element": "^2.0.3",
     "styled-components": "^4.3.2",
+    "theme-ui": "^0.2.35",
     "typeface-work-sans": "0.0.72"
   },
   "devDependencies": {
