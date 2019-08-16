@@ -98,7 +98,7 @@ export const ServicesHero = () => (
 );
 
 const BoldText = styled.strong`
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
 `;
 
 const AboutPlug = styled.div`
@@ -121,7 +121,7 @@ const AboutPlugImgWrapper = styled.div`
 
 const AboutPlugLink = styled(Link)`
   color: ${colors.BLUE};
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   font-size: 18px;
   margin-left: 22px;
   text-decoration: none;

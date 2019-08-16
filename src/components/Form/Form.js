@@ -127,7 +127,7 @@ const Subheading = styled.p`
 const Label = styled.label`
   display: block;
   color: white;
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 6px;

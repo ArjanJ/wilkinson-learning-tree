@@ -32,7 +32,7 @@ export const Button = styled.button`
   align-items: center;
   border-radius: 99px;
   display: inline-flex;
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   font-weight: 700;
   height: 40px;
   justify-content: center;

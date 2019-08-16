@@ -70,7 +70,7 @@ const NavListItem = styled.li``;
 const NavLink = styled(Link)`
   color: ${colors.BLUE};
   display: block;
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   padding: 15px 0;
   font-size: 30px;
   text-decoration: none;
