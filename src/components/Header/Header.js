@@ -16,6 +16,7 @@ export const Header = () => (
         {({ isOpen, toggle }) => (
           <>
             <HeaderHamburgerButton onClick={toggle} type="button">
+              <span>Menu</span>
               <NavHamburger />
             </HeaderHamburgerButton>
             <Nav isOpen={isOpen} toggle={toggle} />
@@ -35,7 +36,13 @@ const HeaderWrapper = styled.div`
 `;
 
 const HeaderHamburgerButton = styled.button`
+  align-items: center;
   background: none;
+  display: flex;
+
+  span {
+    margin-right: 7px;
+  }
 `;
 
 const HeaderLogoLink = styled(Link)`

@@ -18,14 +18,13 @@ export const HomeAbout = () => (
             filename="conor-and-brody-wilkinson-learning-tree.png"
           />
         </Pic>
-        {/* <Pic alt="Christine Wilkinson" src="https://picsum.photos/300/300" /> */}
       </Box>
       <Box mb="45px">
         <p>
           Hi! My name’s Christine Wilkinson and I’m the mother of two wonderful
           boys, Brody, 7, and Connor, who’s almost 4 years old. I have 13+ years
-          of experience as an Education Assistant working with elementary
-          special needs children at the Burnaby School Board.
+          of exp. as an Education Assistant working with elementary special
+          needs children at the Burnaby School Board.
         </p>
       </Box>
       <Flex justifyContent="center">
@@ -41,7 +40,7 @@ const Pic = styled.div`
   > div {
     border-radius: 50%;
     margin: auto;
-    height: 105px;
-    width: 105px;
+    height: 120px;
+    width: 120px;
   }
 `;

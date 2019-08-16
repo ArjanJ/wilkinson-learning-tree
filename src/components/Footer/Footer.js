@@ -29,7 +29,7 @@ export const Footer = () => (
           <FooterNavLink to="/services">Our Services</FooterNavLink>
           <FooterNavLink to="/about">About Us</FooterNavLink>
           <FooterNavLink to="/register">Register Now</FooterNavLink>
-          <FooterNavLink to="/gallery">Gallery</FooterNavLink>
+          <FooterNavLink to="/photos">Photos</FooterNavLink>
         </FooterNav>
       </Wrapper>
     </Section>

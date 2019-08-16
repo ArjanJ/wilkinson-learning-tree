@@ -3,6 +3,7 @@ import { Box } from "rebass";
 import styled from "styled-components";
 
 import { IconList } from "../IconList/";
+import { Image } from "../image";
 import { Books, Chalkboard, Diploma, FirstAid, Speech } from "../Icons/";
 import { PageHeading } from "../PageHeading/";
 import { PageSubheading } from "../PageSubheading/";
@@ -38,12 +39,9 @@ export const About = () => (
       <Box mb="45px">
         <PageHeading textAlign="center">About Christine</PageHeading>
       </Box>
-      <Box mb="30px">
-        <AboutPic
-          alt="Christine Wilkinson and son."
-          src="https://picsum.photos/800/600"
-        />
-      </Box>
+      <AboutImgWrapper mb="30px">
+        <Image filename="conor-and-brody-wilkinson-learning-tree.png" />
+      </AboutImgWrapper>
       <Box mb="30px">
         <p>
           My name’s Christine Wilkinson and I’m the mother of two wonderful
@@ -98,4 +96,10 @@ const AboutPic = styled.img`
   height: 180px;
   object-fit: cover;
   width: 100%;
+`;
+
+const AboutImgWrapper = styled(Box)`
+  > div {
+    max-height: 180px;
+  }
 `;

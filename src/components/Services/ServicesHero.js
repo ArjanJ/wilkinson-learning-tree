@@ -7,6 +7,7 @@ import { colors } from "../../utils/styleUtils";
 import { philosophyIconList } from "../Home/HomePhilosophy";
 import { Abc, KidBall, TwoPeople } from "../Icons/";
 import { IconList } from "../IconList/";
+import { Image } from "../image";
 import { PageHeading } from "../PageHeading/";
 import { PageSubheading } from "../PageSubheading/";
 import { Section } from "../Section/";
@@ -42,6 +43,9 @@ export const ServicesHero = () => (
         <Box mb="45px">
           <IconList data={servicesIconList} />
         </Box>
+        <AboutImgWrapper mb="45px">
+          <Image filename="wilkinson-learning-tree-daycare-3.png" />
+        </AboutImgWrapper>
         <Box mb="30px">
           <p>
             <BoldText>
@@ -61,6 +65,9 @@ export const ServicesHero = () => (
             will welcome your child.
           </p>
         </Box>
+        <AboutImgWrapper mb="45px">
+          <Image filename="wilkinson-learning-tree-daycare-2.png" />
+        </AboutImgWrapper>
         <Box mb="45px">
           <PageSubheading>Our Philosophy</PageSubheading>
           <p>
@@ -79,10 +86,9 @@ export const ServicesHero = () => (
     </Section>
     <AboutPlug>
       <AboutPlugWrapper>
-        <AboutPlugPic
-          alt="Christine Wilkinson"
-          src="https://picsum.photos/300/300"
-        />
+        <AboutPlugImgWrapper flex={1} mb="45px">
+          <Image filename="conor-and-brody-wilkinson-learning-tree.png" />
+        </AboutPlugImgWrapper>
         <AboutPlugLink to="/about">
           Read about Christine Wilkinson
         </AboutPlugLink>
@@ -105,12 +111,12 @@ const AboutPlugWrapper = styled(Wrapper)`
   display: flex;
 `;
 
-const AboutPlugPic = styled.img`
-  border-radius: 50%;
-  display: flex;
-  flex: 1;
-  height: 90px;
-  width: 90px;
+const AboutPlugImgWrapper = styled.div`
+  > div {
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+  }
 `;
 
 const AboutPlugLink = styled(Link)`
@@ -119,4 +125,10 @@ const AboutPlugLink = styled(Link)`
   font-size: 18px;
   margin-left: 22px;
   text-decoration: none;
+`;
+
+const AboutImgWrapper = styled(Box)`
+  > div {
+    max-height: 180px;
+  }
 `;

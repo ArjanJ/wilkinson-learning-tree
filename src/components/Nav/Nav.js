@@ -23,7 +23,7 @@ export const Nav = ({ isOpen, toggle }) => (
           <NavLink to="/register">Register Now</NavLink>
         </NavListItem>
         <NavListItem>
-          <NavLink to="/gallery">Gallery</NavLink>
+          <NavLink to="/photos">Photos</NavLink>
         </NavListItem>
       </NavList>
       <NavCloseButton onClick={toggle} type="button">
