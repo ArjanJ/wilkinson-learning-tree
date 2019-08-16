@@ -9,6 +9,7 @@ import { Wrapper } from "../Wrapper/";
 
 export const Form = () => (
   <form
+    name="Website Lead"
     method="post"
     netlify-honeypot="bot-field"
     data-netlify="true"
@@ -57,7 +58,7 @@ export const Form = () => (
           />
         </Box>
         <Box mb="30px">
-          <Label htmlFor="message">Number of children needing daycare</Label>
+          <Legend>Number of children needing daycare</Legend>
           <RadioWrapper>
             <RadioBox>
               <RadioInput
@@ -131,6 +132,8 @@ const Label = styled.label`
   font-weight: 700;
   margin-bottom: 6px;
 `;
+
+const Legend = styled(Label)``;
 
 const Input = styled.input`
   border: 2px solid white;
