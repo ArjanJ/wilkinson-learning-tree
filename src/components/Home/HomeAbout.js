@@ -66,7 +66,12 @@ const HomeAboutWrapper = styled(Wrapper)`
 `;
 
 const AboutDesktopPic = styled.div`
+  display: none;
   max-width: 450px;
+
+  @media ${mq.MOBILE} {
+    display: block;
+  }
 `;
 
 const P = styled.p`

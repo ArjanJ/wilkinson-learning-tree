@@ -1,32 +1,34 @@
-import React, { FunctionComponent, useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react";
 
 export const Toggle = ({ children }) => {
-  const node = useRef()
-  const [isOpen, setIsOpen] = useState(false)
+  const node = useRef();
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleDocClick = ({ target }) => {
     if (node.current.contains(target)) {
       // Inside Toggle click.
-      return null
+      return null;
     }
 
     // Outside Toggle click.
-    setIsOpen(false)
-  }
+    setIsOpen(false);
+  };
 
   useEffect(() => {
-    const root = document.getElementById("___gatsby")
+    const root = document.getElementById("___gatsby");
 
     if (isOpen) {
-      root.addEventListener("click", handleDocClick)
+      root.addEventListener("click", handleDocClick);
     }
 
     return () => {
-      root.removeEventListener("click", handleDocClick)
-    }
-  }, [isOpen])
+      root.removeEventListener("click", handleDocClick);
+    };
+  }, [isOpen]);
 
-  const handleToggleClick = () => setIsOpen(!isOpen)
+  const handleToggleClick = () => setIsOpen(!isOpen);
 
-  return <div ref={node}>{children({ isOpen, toggle: handleToggleClick })}</div>
-}
+  return (
+    <div ref={node}>{children({ isOpen, toggle: handleToggleClick })}</div>
+  );
+};

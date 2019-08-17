@@ -1,5 +1,4 @@
-import { darken, rgba } from "polished";
-import React from "react";
+import { darken } from "polished";
 import styled, { css } from "styled-components";
 
 import { colors, easing } from "../../utils/styleUtils";

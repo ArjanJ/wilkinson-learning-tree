@@ -1,6 +1,6 @@
 import { darken, lighten } from "polished";
 import React from "react";
-import { Box, Flex } from "rebass";
+import { Box } from "rebass";
 import styled from "styled-components";
 
 import { colors, easing, mq } from "../../utils/styleUtils";
@@ -187,22 +187,6 @@ const Input = styled.input`
   &:focus {
     border-color: ${colors.BLUE};
   }
-`;
-
-const Select = styled.select`
-  height: 45px;
-  border-radius: 3px;
-  padding: 0 15px;
-  width: 100%;
-`;
-
-const Textarea = styled.textarea`
-  border-radius: 3px;
-  border: none;
-  font-size: 16px;
-  min-height: 90px;
-  padding: 12px 15px;
-  width: 100%;
 `;
 
 const RadioWrapper = styled.div`

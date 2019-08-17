@@ -4,7 +4,7 @@ import { Box, Flex } from "rebass";
 import scrollToElement from "scroll-to-element";
 import styled from "styled-components";
 
-import { colors, mq } from "../../utils/styleUtils";
+import { mq } from "../../utils/styleUtils";
 import { Button } from "../Button/";
 import { PageHeading } from "../PageHeading/";
 import { Section } from "../Section/";
@@ -61,6 +61,7 @@ export const HomeHero = () => (
 );
 
 const HomeSection = styled(Section)`
+  padding-top: 60px;
   text-align: center;
 
   @media ${mq.MOBILE} {

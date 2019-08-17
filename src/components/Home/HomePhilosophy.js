@@ -28,23 +28,25 @@ export const philosophyIconList = [
 ];
 
 export const HomePhilosophy = () => (
-  <Section>
-    <HomePhilWrapper>
-      <Box flex={1} mb="30px">
-        <Heading>Our Philosophy</Heading>
-      </Box>
-      <Box flex={2}>
-        <IconList data={philosophyIconList} />
-      </Box>
-    </HomePhilWrapper>
-  </Section>
+  <Box pt={["60px", 0]}>
+    <Section>
+      <HomePhilWrapper>
+        <Box flex={1} mb="30px">
+          <Heading>Our Philosophy</Heading>
+        </Box>
+        <Box flex={2}>
+          <IconList data={philosophyIconList} />
+        </Box>
+      </HomePhilWrapper>
+    </Section>
+  </Box>
 );
 
 const Heading = styled.h2`
   font-size: 25px;
   text-align: center;
 
-  @media ${mq.mobile} {
+  @media ${mq.MOBILE} {
     font-size: 36px;
     text-align: left;
   }
