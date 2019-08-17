@@ -3,20 +3,22 @@ import React from "react";
 import { Box } from "rebass";
 import styled from "styled-components";
 
-import { colors } from "../../utils/styleUtils";
+import { colors, easing, mq } from "../../utils/styleUtils";
 import { Logo } from "../Logo/";
 import { Section } from "../Section/";
 import { Wrapper } from "../Wrapper/";
 
 export const Footer = () => (
-  <>
+  <Box pt={["60px", "90px"]}>
     <Section as="footer">
       <Wrapper>
         <Box mb="37px">
           <Logo />
         </Box>
         <FooterNav>
-          <FooterNavLink to="#">Contact Us</FooterNavLink>
+          <FooterNavLink hideDesktop={true} to="#">
+            Contact Us
+          </FooterNavLink>
           <Box>
             <FooterText href="tel:6045372396">(604) 537-2396</FooterText>
             <FooterText href="mailto:christine@mapleridgedaycare.com">
@@ -36,10 +38,15 @@ export const Footer = () => (
     <FooterBottom>
       <Wrapper>© Wilkinson Learning Tree {new Date().getFullYear()}</Wrapper>
     </FooterBottom>
-  </>
+  </Box>
 );
 
-const FooterNav = styled.nav``;
+const FooterNav = styled.nav`
+  @media ${mq.MOBILE} {
+    display: flex;
+    justify-content: space-between;
+  }
+`;
 
 const FooterNavLink = styled(Link)`
   display: block;
@@ -47,9 +54,18 @@ const FooterNavLink = styled(Link)`
   font-weight: 700;
   margin-bottom: 22px;
   text-decoration: none;
+  transition: color 0.3s ${easing.OUT};
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:hover {
+    color: ${colors.BLUE};
+  }
+
+  @media ${mq.MOBILE} {
+    ${({ hideDesktop }) => (hideDesktop === true ? "display: none" : null)};
   }
 `;
 

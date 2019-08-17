@@ -1,9 +1,9 @@
 import { darken, lighten } from "polished";
 import React from "react";
-import { Box } from "rebass";
+import { Box, Flex } from "rebass";
 import styled from "styled-components";
 
-import { colors, easing } from "../../utils/styleUtils";
+import { colors, easing, mq } from "../../utils/styleUtils";
 import { Button } from "../Button/";
 import { Wrapper } from "../Wrapper/";
 
@@ -17,91 +17,110 @@ export const Form = () => (
   >
     <input type="hidden" name="bot-field" />
     <Background>
-      <Wrapper>
-        <Box mb="22px">
+      <FormWrapper>
+        <Box flex={1} mb="22px">
           <Heading>Get in touch!</Heading>
-          <Subheading>
-            We look forward to welcoming you to our daycare and caring for your
-            child. We’ll be in touch with you as soon as possible, thank you.
-          </Subheading>
+          <Box mb={[0, "30px"]}>
+            <Subheading>
+              We look forward to welcoming you to our daycare and caring for
+              your child. We’ll be in touch with you as soon as possible, thank
+              you.
+            </Subheading>
+          </Box>
+          <FormDesktopMoreCopy>
+            <Subheading>
+              If you prefer to contact us directly, feel free to call{" "}
+              <strong>
+                <a href="tel:6045372396">(604) 537-2396</a>
+              </strong>{" "}
+              or email{" "}
+              <strong>
+                <a href="mailto:christine@mapleridgedaycare.com">
+                  christine@mapleridgedaycare.com
+                </a>
+              </strong>
+            </Subheading>
+          </FormDesktopMoreCopy>
         </Box>
-        <Box mb="22px">
-          <Label htmlFor="name">Name</Label>
-          <Input
-            id="name"
-            name="name"
-            placeholder="Your name"
-            required={true}
-            type="text"
-          />
+        <Box flex={1} ml={[0, "90px"]}>
+          <Box mb={["22px", "30px"]}>
+            <Label htmlFor="name">Name</Label>
+            <Input
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required={true}
+              type="text"
+            />
+          </Box>
+          <Box mb={["22px", "30px"]}>
+            <Label htmlFor="email">Email</Label>
+            <Input
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required={true}
+              type="email"
+            />
+          </Box>
+          <Box mb={["22px", "30px"]}>
+            <Label htmlFor="phone">Phone Number</Label>
+            <Input
+              id="phone"
+              inputmode="numeric"
+              name="phone"
+              pattern="[0-9]*"
+              placeholder="Your phone number"
+              required={true}
+              type="text"
+            />
+          </Box>
+          <Box mb={["30px", "45px"]}>
+            <Legend>Number of children needing daycare</Legend>
+            <RadioWrapper>
+              <RadioBox>
+                <RadioInput
+                  id="numberOfChildren1"
+                  name="numberOfChildren"
+                  value="1"
+                  type="radio"
+                />
+                <RadioLabel htmlFor="numberOfChildren1">1</RadioLabel>
+              </RadioBox>
+              <RadioBox>
+                <RadioInput
+                  id="numberOfChildren2"
+                  name="numberOfChildren"
+                  value="2"
+                  type="radio"
+                />
+                <RadioLabel htmlFor="numberOfChildren2">2</RadioLabel>
+              </RadioBox>
+              <RadioBox>
+                <RadioInput
+                  id="numberOfChildren3"
+                  name="numberOfChildren"
+                  value="3"
+                  type="radio"
+                />
+                <RadioLabel htmlFor="numberOfChildren3">3</RadioLabel>
+              </RadioBox>
+              <RadioBox>
+                <RadioInput
+                  id="numberOfChildren4+"
+                  name="numberOfChildren"
+                  value="4+"
+                  type="radio"
+                />
+                <RadioLabel htmlFor="numberOfChildren4+">4+</RadioLabel>
+              </RadioBox>
+            </RadioWrapper>
+          </Box>
+          <Button kind="primary" type="submit" width="100%">
+            Contact us
+          </Button>
         </Box>
-        <Box mb="22px">
-          <Label htmlFor="email">Email</Label>
-          <Input
-            id="email"
-            name="email"
-            placeholder="Your email"
-            required={true}
-            type="email"
-          />
-        </Box>
-        <Box mb="22px">
-          <Label htmlFor="phone">Phone Number</Label>
-          <Input
-            id="phone"
-            inputmode="numeric"
-            name="phone"
-            pattern="[0-9]*"
-            placeholder="Your phone number"
-            required={true}
-            type="text"
-          />
-        </Box>
-        <Box mb="30px">
-          <Legend>Number of children needing daycare</Legend>
-          <RadioWrapper>
-            <RadioBox>
-              <RadioInput
-                id="numberOfChildren1"
-                name="numberOfChildren"
-                value="1"
-                type="radio"
-              />
-              <RadioLabel htmlFor="numberOfChildren1">1</RadioLabel>
-            </RadioBox>
-            <RadioBox>
-              <RadioInput
-                id="numberOfChildren2"
-                name="numberOfChildren"
-                value="2"
-                type="radio"
-              />
-              <RadioLabel htmlFor="numberOfChildren2">2</RadioLabel>
-            </RadioBox>
-            <RadioBox>
-              <RadioInput
-                id="numberOfChildren3"
-                name="numberOfChildren"
-                value="3"
-                type="radio"
-              />
-              <RadioLabel htmlFor="numberOfChildren3">3</RadioLabel>
-            </RadioBox>
-            <RadioBox>
-              <RadioInput
-                id="numberOfChildren4+"
-                name="numberOfChildren"
-                value="4+"
-                type="radio"
-              />
-              <RadioLabel htmlFor="numberOfChildren4+">4+</RadioLabel>
-            </RadioBox>
-          </RadioWrapper>
-        </Box>
-        <Button kind="primary" type="submit" width="100%">
-          Send
-        </Button>
-      </Wrapper>
+      </FormWrapper>
     </Background>
   </form>
 );
@@ -109,6 +128,16 @@ export const Form = () => (
 const Background = styled.div`
   background: ${colors.ORANGE};
   padding: 45px 0;
+
+  @media ${mq.MOBILE} {
+    padding: 90px 0;
+  }
+`;
+
+const FormWrapper = styled(Wrapper)`
+  @media ${mq.MOBILE} {
+    display: flex;
+  }
 `;
 
 const Heading = styled.h3`
@@ -116,12 +145,23 @@ const Heading = styled.h3`
   font-size: 30px;
   margin-bottom: 15px;
   text-align: center;
+
+  @media ${mq.MOBILE} {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
 `;
 
 const Subheading = styled.p`
   color: white;
   font-weight: 500;
   text-align: center;
+
+  @media ${mq.MOBILE} {
+    font-size: 18px;
+    text-align: left;
+  }
 `;
 
 const Label = styled.label`
@@ -207,5 +247,13 @@ const RadioInput = styled.input`
   &:checked + label {
     background: ${lighten(0.25, colors.BLUE)};
     color: ${darken(0.1, colors.BLUE)};
+  }
+`;
+
+const FormDesktopMoreCopy = styled(Box)`
+  display: none;
+
+  @media ${mq.MOBILE} {
+    display: block;
   }
 `;
