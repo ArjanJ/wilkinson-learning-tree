@@ -7,7 +7,10 @@ import SEO from "../components/seo";
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="About Us" />
+    <SEO
+      description="Read about Christine Wilkson and The Wilkinson Learning Tree in Maple Ridge, BC."
+      title="About Us"
+    />
     <About />
     <Form />
   </Layout>

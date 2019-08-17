@@ -7,7 +7,10 @@ import SEO from "../components/seo";
 
 const PhotosPage = () => (
   <Layout>
-    <SEO title="Photos" />
+    <SEO
+      description="Photos of the Wilkinson Learning Tree Family Daycare in Maple Ridge, BC."
+      title="Photos"
+    />
     <Photos />
     <Form />
   </Layout>

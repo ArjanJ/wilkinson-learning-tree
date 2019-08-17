@@ -7,7 +7,10 @@ import SEO from "../components/seo";
 
 const ServicesPage = () => (
   <Layout>
-    <SEO title="Our Services" />
+    <SEO
+      description="The Wilkinson Learning Tree Family Daycare offers the best daycare in Maple Ridge, BC."
+      title="Our Services"
+    />
     <ServicesHero />
     <Form />
   </Layout>

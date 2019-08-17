@@ -12,7 +12,7 @@ import SEO from "../components/seo";
 
 const IndexPage = () => (
   <Layout>
-    <SEO />
+    <SEO description="The Wilkinson Learning Tree is a family daycare in Maple Ridge specializing in care for children between 1 and 5 years old." />
     <HomeHero />
     <HomeImageStrip />
     <HomePhilosophy />
