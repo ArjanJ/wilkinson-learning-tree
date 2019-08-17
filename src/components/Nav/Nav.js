@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
-import { colors, easing } from "../../utils/styleUtils";
+import { colors, easing, mq } from "../../utils/styleUtils";
 import { Close } from "../Icons/";
 
 export const Nav = ({ isOpen, toggle }) => (
@@ -51,11 +51,23 @@ const NavContainer = styled.div`
   visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
   width: 100%;
   z-index: 10;
+
+  @media ${mq.MOBILE} {
+    display: block;
+    height: auto;
+    opacity: 1;
+    position: static;
+    visibility: visible;
+  }
 `;
 
 const NavInner = styled.nav`
   flex: 1;
   padding: 30px;
+
+  @media ${mq.MOBILE} {
+    padding: 0;
+  }
 `;
 
 const NavList = styled.ul`
@@ -63,9 +75,18 @@ const NavList = styled.ul`
   text-align: center;
   transform: ${({ isOpen }) => (isOpen ? "none" : "scale(0.96)")};
   transition: all 0.45s ${easing.OUT};
+
+  @media ${mq.MOBILE} {
+    display: flex;
+    transform: none;
+  }
 `;
 
-const NavListItem = styled.li``;
+const NavListItem = styled.li`
+  @media ${mq.MOBILE} {
+    margin-left: 45px;
+  }
+`;
 
 const NavLink = styled(Link)`
   color: ${colors.BLUE};
@@ -74,6 +95,18 @@ const NavLink = styled(Link)`
   padding: 15px 0;
   font-size: 30px;
   text-decoration: none;
+
+  @media ${mq.MOBILE} {
+    color: ${colors.BLACK};
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ${easing.OUT};
+
+    &:hover {
+      color: ${colors.BLUE};
+    }
+  }
 `;
 
 const NavCloseButton = styled.button`
@@ -82,4 +115,8 @@ const NavCloseButton = styled.button`
   position: absolute;
   right: 15px;
   top: 20px;
+
+  @media ${mq.MOBILE} {
+    display: none;
+  }
 `;

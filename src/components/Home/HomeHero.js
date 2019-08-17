@@ -23,14 +23,14 @@ export const HomeHero = () => (
     <HomeWrapper>
       <HomeInnerWrapper>
         <HomeText>
-          <HomeHeadingGroup mb="45px">
+          <Box mb="45px">
             <HomeHeading>Welcome to the Wilkinson Learning Tree</HomeHeading>
             <Subheading>
-              We’re a <strong>family daycare</strong> in{" "}
-              <strong>Maple Ridge</strong> specializing in care for children
-              between <strong>1 and 5 years old</strong>.
+              We’re a family daycare in <strong>Maple Ridge</strong>{" "}
+              specializing in care for children between{" "}
+              <strong>1 and 5 years old</strong>.
             </Subheading>
-          </HomeHeadingGroup>
+          </Box>
           <HomeButtons>
             <Box mb="15px">
               <Button
@@ -66,7 +66,8 @@ const HomeSection = styled(Section)`
   @media ${mq.MOBILE} {
     align-items: center;
     display: flex;
-    min-height: 645px;
+    min-height: calc(80vh);
+    padding-top: 90px;
     text-align: left;
   }
 `;
@@ -89,6 +90,7 @@ const HomeInnerWrapper = styled(Flex)`
 const HomeHeading = styled(PageHeading)`
   @media ${mq.MOBILE} {
     font-size: 40px;
+    line-height: 1.3;
     margin-bottom: 30px;
   }
 `;
@@ -108,8 +110,6 @@ const HomeText = styled(Box)`
     flex: 1;
   }
 `;
-
-const HomeHeadingGroup = styled(Box)``;
 
 const HomeImg = styled(Box)`
   display: none;
