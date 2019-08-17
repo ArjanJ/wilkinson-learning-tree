@@ -16,5 +16,5 @@ export const easing = {
 };
 
 export const mq = {
-  MOBILE: `(min-width: 540px)`,
+  MOBILE: `(min-width: 990px)`,
 };
