@@ -50,11 +50,11 @@ export const About = () => (
               <P>
                 My name’s Christine Wilkinson and I’m the mother of two
                 wonderful boys, named Brody, 7, and Connor, almost 4 years old.
-                I have 13+ years of exp. as an Education Assistant working with
-                elementary special needs children at the Burnaby School Board.
-                Previously, I had 15 years of experience working with children,
-                aged 3 to 12, starting with babysitting and later as a qualified
-                swimming instructor during the summer.
+                I have 13+ years of experience as an Educational Assistant
+                working with elementary special needs children at the Burnaby
+                School Board. Previously, I had 15 years of experience working
+                with children, aged 3 to 12, starting with babysitting and later
+                as a qualified swimming instructor during the summer.
               </P>
             </Box>
             <Box mb="45px">

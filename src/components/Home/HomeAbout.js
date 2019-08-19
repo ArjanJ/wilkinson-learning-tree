@@ -31,8 +31,8 @@ export const HomeAbout = () => (
           <P>
             Hi! My name’s Christine Wilkinson and I’m the mother of two
             wonderful boys, Brody, 7, and Connor, who’s almost 4 years old. I
-            have 13+ years of exp. as an Education Assistant working with
-            elementary special needs children at the Burnaby School Board.
+            have 13+ years of experience as an Educational Assistant working
+            with elementary special needs children at the Burnaby School Board.
           </P>
         </Box>
         <Flex justifyContent={["center", "flex-start"]}>
