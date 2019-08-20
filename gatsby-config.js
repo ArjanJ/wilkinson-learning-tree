@@ -3,6 +3,7 @@ module.exports = {
     title: `Maple Ridge Daycare - Wilkinson Learning Tree`,
     description: `We’re a family daycare in Maple Ridge specializing in care for children between 1 and 5 years old.`,
     author: `@arjanj`,
+    siteUrl: "https://www.mapleridgedaycare.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -42,6 +43,7 @@ module.exports = {
         head: true,
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
