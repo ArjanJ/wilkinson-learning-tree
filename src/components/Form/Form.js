@@ -35,8 +35,8 @@ export const Form = () => (
               </strong>{" "}
               or email{" "}
               <strong>
-                <a href="mailto:christine@mapleridgedaycare.com">
-                  christine@mapleridgedaycare.com
+                <a href="mailto:christine@wilkinsonlearningtree.com">
+                  christine@wilkinsonlearningtree.com
                 </a>
               </strong>
             </Subheading>

@@ -21,8 +21,8 @@ export const Footer = () => (
           </FooterNavLink>
           <Box>
             <FooterText href="tel:6045372396">(604) 537-2396</FooterText>
-            <FooterText href="mailto:christine@mapleridgedaycare.com">
-              christine@mapleridgedaycare.com
+            <FooterText href="mailto:christine@wilkinsonlearningtree.com">
+              christine@wilkinsonlearningtree.com
             </FooterText>
             <FooterText href="">
               10172 244th Street Maple Ridge, BC V2W 0H5

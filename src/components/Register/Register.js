@@ -22,8 +22,8 @@ export const Register = () => (
             </strong>{" "}
             or{" "}
             <strong>
-              <a href="mailto:christine@mapleridgedaycare.com">
-                christine@mapleridgedaycare.com
+              <a href="mailto:christine@wilkinsonlearningtree.com">
+                christine@wilkinsonlearningtree.com
               </a>
             </strong>
           </p>
