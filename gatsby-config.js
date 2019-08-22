@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Maple Ridge Daycare - Wilkinson Learning Tree`,
-    description: `We’re a family daycare in Maple Ridge specializing in care for children between 1 and 5 years old.`,
+    title: `Wilkinson Learning Tree - Maple Ridge Daycare`,
+    description: `The Wilkinson Learning Tree is a family daycare in Maple Ridge, BC specializing in care for children between 1 and 5 years old.`,
     author: `@arjanj`,
-    siteUrl: "https://www.mapleridgedaycare.com",
+    siteUrl: "https://www.wilkinsonlearningtree.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
