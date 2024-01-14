@@ -47,7 +47,7 @@ export const ServicesHero = () => (
         </Flex>
         <Flex>
           <AboutImgWrapper mb={["45px", "90px"]}>
-            <Image filename="wilkinson-learning-tree-daycare-3.png" />
+            <Image filename="IMG_8735.jpg" />
           </AboutImgWrapper>
           <Box flex={1} ml={[0, "90px"]}>
             <Box mb="30px">
@@ -59,7 +59,7 @@ export const ServicesHero = () => (
               </p>
             </Box>
             <Box mb="45px">
-              <p>
+              <Box as="p" mb="45px">
                 I’ll make sure that your child will be safe and secure within
                 our daycare and treat each child as if they were my own; no
                 matter what race, religion or gender. They’ll be treated with
@@ -67,27 +67,32 @@ export const ServicesHero = () => (
                 your child will feel at ease and at home. This will reduce any
                 anxiety or fear your child may have in a new environment.
                 Lastly, all members of our family will welcome your child.
-              </p>
+              </Box>
+
+              <Image filename="IMG_8718.jpg" />
             </Box>
           </Box>
         </Flex>
         <Flex>
           <AboutImgWrapper mb="45px">
-            <Image filename="wilkinson-learning-tree-daycare-2.png" />
+            <Image filename="IMG_8779.jpg" />
           </AboutImgWrapper>
           <Box flex={1} ml={[0, "90px"]}>
             <Box mb="45px">
               <PageSubheading>Our Philosophy</PageSubheading>
-              <p>
+              <Box as="p" mb="30px">
                 “In the field of early childhood education we hold a certain set
                 of beliefs when it comes to the care and education of young
                 children... Our philosophy begins with our belief that educators
                 need to plan, implement, observe and evaluate activities for
                 children. It is through these activities that children learn...”
-              </p>
-            </Box>
-            <Box>
-              <IconList data={philosophyIconList} />
+              </Box>
+
+              <Box mb="45px">
+                <IconList data={philosophyIconList} />
+              </Box>
+
+              <Image filename="IMG_8780.jpg" />
             </Box>
           </Box>
         </Flex>

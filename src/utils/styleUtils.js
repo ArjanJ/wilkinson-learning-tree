@@ -5,7 +5,7 @@ export const colors = {
   LIGHT_GREY: "#F3F3F3",
   LIGHT_GREY_2: "#ebebeb",
   MID_GREY: "#707070",
-  ORANGE: "#E3B34C",
+  ORANGE: "#DCA633",
   WHITE: "#FFFFFF",
 };
 
