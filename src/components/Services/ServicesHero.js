@@ -92,7 +92,7 @@ export const ServicesHero = () => (
                 <IconList data={philosophyIconList} />
               </Box>
 
-              <Image filename="07-wilkinson-daycare.jpg" />
+              <Image filename="08-wilkinson-daycare.jpg" />
             </Box>
           </Box>
         </Flex>
