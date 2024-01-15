@@ -47,7 +47,7 @@ export const ServicesHero = () => (
         </Flex>
         <Flex>
           <AboutImgWrapper mb={["45px", "90px"]}>
-            <Image filename="IMG_8735.jpg" />
+            <Image filename="05-wilkinson-daycare.jpg" />
           </AboutImgWrapper>
           <Box flex={1} ml={[0, "90px"]}>
             <Box mb="30px">
@@ -69,13 +69,13 @@ export const ServicesHero = () => (
                 Lastly, all members of our family will welcome your child.
               </Box>
 
-              <Image filename="IMG_8718.jpg" />
+              <Image filename="06-wilkinson-daycare.jpg" />
             </Box>
           </Box>
         </Flex>
         <Flex>
           <AboutImgWrapper mb="45px">
-            <Image filename="IMG_8779.jpg" />
+            <Image filename="07-wilkinson-daycare.jpg" />
           </AboutImgWrapper>
           <Box flex={1} ml={[0, "90px"]}>
             <Box mb="45px">
@@ -92,7 +92,7 @@ export const ServicesHero = () => (
                 <IconList data={philosophyIconList} />
               </Box>
 
-              <Image filename="IMG_8780.jpg" />
+              <Image filename="07-wilkinson-daycare.jpg" />
             </Box>
           </Box>
         </Flex>
@@ -102,7 +102,7 @@ export const ServicesHero = () => (
     <AboutPlug>
       <AboutPlugWrapper>
         <AboutPlugImgWrapper flex={1} mb="45px">
-          <Image filename="conor-and-brody-wilkinson-learning-tree.png" />
+          <Image filename="04-conor-and-brody-wilkinson-learning-tree.png" />
         </AboutPlugImgWrapper>
         <AboutPlugLink to="/about">
           Read about Christine Wilkinson
