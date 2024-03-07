@@ -30,7 +30,7 @@ export const HomeAbout = () => (
         <Box mb="45px">
           <P>
             Hi! My name’s Christine Wilkinson and I’m the mother of two
-            wonderful boys, Brody, 7, and Connor, who’s almost 4 years old. I
+            wonderful boys, Brody, 12, and Connor, 9 years old. I
             have 13+ years of experience as an Educational Assistant working
             with elementary special needs children at the Burnaby School Board.
           </P>
