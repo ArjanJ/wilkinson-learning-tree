@@ -55,9 +55,11 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "overrides": {
-    "parse-url": "8.1.0"
+    "parse-url": "8.1.0",
+    "flatted": "3.4.2"
   },
   "resolutions": {
-    "parse-url": "8.1.0"
+    "parse-url": "8.1.0",
+    "flatted": "3.4.2"
   }
 }
