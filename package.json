@@ -55,12 +55,14 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "overrides": {
+    "eventsource": "1.1.1",
     "parse-url": "8.1.0",
     "flatted": "3.4.2",
     "form-data": "4.0.6",
     "shell-quote": "1.8.4"
   },
   "resolutions": {
+    "eventsource": "1.1.1",
     "parse-url": "8.1.0",
     "flatted": "3.4.2",
     "form-data": "4.0.6",
