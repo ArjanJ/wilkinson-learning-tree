@@ -56,10 +56,12 @@
   },
   "overrides": {
     "parse-url": "8.1.0",
-    "flatted": "3.4.2"
+    "flatted": "3.4.2",
+    "form-data": "4.0.6"
   },
   "resolutions": {
     "parse-url": "8.1.0",
-    "flatted": "3.4.2"
+    "flatted": "3.4.2",
+    "form-data": "4.0.6"
   }
 }
