@@ -1,0 +1,7 @@
+{
+  "name": "ip",
+  "version": "2.0.2",
+  "description": "IP address utilities for node.js",
+  "main": "lib/ip.js",
+  "license": "MIT"
+}
