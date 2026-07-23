@@ -1,0 +1,11 @@
+{
+  "name": "nth-check",
+  "version": "2.0.1",
+  "description": "Patched nth-check package with legacy CommonJS exports for css-select 2.x",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "license": "BSD-2-Clause"
+}
