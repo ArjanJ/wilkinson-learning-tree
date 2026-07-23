@@ -73,6 +73,7 @@
     "path-to-regexp": "0.1.13",
     "http-cache-semantics": "4.1.1",
     "picomatch": "2.3.2",
+    "nth-check": "file:patches/nth-check",
     "ip": "file:patches/ip"
   },
   "resolutions": {
