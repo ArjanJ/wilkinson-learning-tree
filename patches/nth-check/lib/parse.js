@@ -17,7 +17,7 @@ function parse(formula) {
 
   if (idx < formula.length && formula.charAt(idx) === "n") {
     idx++;
-    a = sign * (number ?? 1);
+    a = sign * (number === null ? 1 : number);
     skipWhitespace();
 
     if (idx < formula.length) {
