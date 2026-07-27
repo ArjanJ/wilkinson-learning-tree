@@ -18,6 +18,7 @@
     "gatsby-source-filesystem": "^2.1.7",
     "gatsby-theme-gallery": "^1.0.1",
     "gatsby-transformer-sharp": "^2.2.5",
+    "http-proxy-middleware": "file:patches/http-proxy-middleware",
     "ip": "file:patches/ip",
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",
@@ -76,6 +77,7 @@
     "path-to-regexp": "0.1.13",
     "http-cache-semantics": "4.1.1",
     "picomatch": "2.3.2",
+    "http-proxy-middleware": "file:patches/http-proxy-middleware",
     "nth-check": "file:patches/nth-check",
     "ip": "file:patches/ip",
     "@graphql-tools/url-loader": {
