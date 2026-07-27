@@ -80,6 +80,9 @@
     "ip": "file:patches/ip",
     "@graphql-tools/url-loader": {
       "cross-fetch": "3.1.5"
+    },
+    "find-versions": {
+      "semver-regex": "3.1.4"
     }
   },
   "resolutions": {
