@@ -27,6 +27,7 @@
     "react-helmet": "^5.2.1",
     "rebass": "^4.0.2",
     "scroll-to-element": "^2.0.3",
+    "serialize-javascript": "file:patches/serialize-javascript",
     "styled-components": "^4.3.2",
     "theme-ui": "^0.2.35",
     "typeface-work-sans": "0.0.72"
@@ -64,6 +65,7 @@
       "trim": "0.0.3"
     },
     "flatted": "3.4.2",
+    "serialize-javascript": "$serialize-javascript",
     "form-data": "4.0.6",
     "@babel/plugin-transform-modules-systemjs": "7.29.4",
     "braces": "3.0.3",
