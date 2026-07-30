@@ -30,7 +30,8 @@
     "serialize-javascript": "file:patches/serialize-javascript",
     "styled-components": "^4.3.2",
     "theme-ui": "^0.2.35",
-    "typeface-work-sans": "0.0.72"
+    "typeface-work-sans": "0.0.72",
+    "webpack-dev-middleware": "file:patches/webpack-dev-middleware"
   },
   "devDependencies": {
     "eslint": "^6.1.0",
@@ -89,7 +90,11 @@
       "semver-regex": "3.1.4"
     },
     "gatsby": {
-      "socket.io-parser": "4.2.6"
+      "socket.io-parser": "4.2.6",
+      "webpack-dev-middleware": "$webpack-dev-middleware"
+    },
+    "webpack-dev-server": {
+      "webpack-dev-middleware": "$webpack-dev-middleware"
     }
   },
   "resolutions": {

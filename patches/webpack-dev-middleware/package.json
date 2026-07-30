@@ -1,0 +1,30 @@
+{
+  "name": "webpack-dev-middleware",
+  "version": "5.3.4",
+  "description": "Gatsby 2-compatible webpack-dev-middleware build with the 5.3.4 path traversal fix",
+  "license": "MIT",
+  "repository": "webpack/webpack-dev-middleware",
+  "author": "Tobias Koppers @sokra",
+  "homepage": "https://github.com/webpack/webpack-dev-middleware",
+  "bugs": "https://github.com/webpack/webpack-dev-middleware/issues",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 6"
+  },
+  "files": [
+    "LICENSE",
+    "SECURITY.md",
+    "lib",
+    "index.js"
+  ],
+  "peerDependencies": {
+    "webpack": "^4.0.0 || ^5.0.0"
+  },
+  "dependencies": {
+    "memory-fs": "^0.4.1",
+    "mime": "^2.4.4",
+    "mkdirp": "^0.5.1",
+    "range-parser": "^1.2.1",
+    "webpack-log": "^2.0.0"
+  }
+}
