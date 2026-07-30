@@ -1,0 +1,16 @@
+{
+  "name": "serialize-javascript",
+  "version": "7.0.5",
+  "description": "Node 10-compatible local build of serialize-javascript 7.0.5",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "license": "BSD-3-Clause",
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "dependencies": {
+    "randombytes": "^2.1.0"
+  }
+}
