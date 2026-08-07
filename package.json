@@ -1,6 +1,7 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
+  "packageManager": "npm@11.16.0",
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
@@ -76,6 +77,7 @@
     "body-parser": "1.20.3",
     "node-forge": "1.4.0",
     "tmp": "0.2.7",
+    "sharp": "0.35.0",
     "cross-spawn": "7.0.5",
     "path-to-regexp": "0.1.13",
     "http-cache-semantics": "4.1.1",
@@ -114,6 +116,7 @@
     "body-parser": "1.20.3",
     "node-forge": "1.4.0",
     "tmp": "0.2.7",
+    "sharp": "0.35.0",
     "cross-spawn": "7.0.5",
     "path-to-regexp": "0.1.13",
     "http-cache-semantics": "4.1.1",
