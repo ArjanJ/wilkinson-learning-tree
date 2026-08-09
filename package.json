@@ -3,6 +3,7 @@
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
+  "packageManager": "npm@8.19.4",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
@@ -92,8 +93,14 @@
     "ws": "7.5.11",
     "gatsby": {
       "socket.io-parser": "4.2.6",
-      "webpack-dev-middleware": "$webpack-dev-middleware"
+      "webpack-dev-middleware": "$webpack-dev-middleware",
+      "autoprefixer": "10.4.21",
+      "css-loader": "5.2.7",
+      "optimize-css-assets-webpack-plugin": "6.0.1",
+      "postcss-flexbugs-fixes": "5.0.2",
+      "postcss-loader": "4.3.0"
     },
+    "postcss": "8.5.23",
     "webpack-dev-server": {
       "webpack-dev-middleware": "$webpack-dev-middleware",
       "ws": "6.2.6"
