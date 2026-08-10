@@ -1,6 +1,5 @@
 import { Link } from "gatsby";
 import React from "react";
-import { Box, Flex } from "rebass";
 import styled from "styled-components";
 
 import { mq } from "../../utils/styleUtils";
@@ -12,7 +11,7 @@ import { Image } from "../image";
 export const HomeAbout = () => (
   <Section top={false}>
     <HomeAboutWrapper>
-      <Box flex={1} mb="30px">
+      <ImageColumn>
         <Pic>
           <Image
             alt="Children at the Wilkinson Learning Tree."
@@ -25,22 +24,22 @@ export const HomeAbout = () => (
             filename="conor-brody-blob-wilkinson-learning-tree.png"
           />
         </AboutDesktopPic>
-      </Box>
-      <Box flex={1}>
-        <Box mb="45px">
+      </ImageColumn>
+      <CopyColumn>
+        <CopyBlock>
           <P>
             Hi! My name’s Christine Wilkinson and I’m the mother of two
             wonderful boys, Brody, 12, and Connor, 9 years old. I
             have 13+ years of experience as an Educational Assistant working
             with elementary special needs children at the Burnaby School Board.
           </P>
-        </Box>
-        <Flex justifyContent={["center", "flex-start"]}>
+        </CopyBlock>
+        <ButtonWrapper>
           <Button as={Link} kind="secondary" to="/about">
             Read more about me
           </Button>
-        </Flex>
-      </Box>
+        </ButtonWrapper>
+      </CopyColumn>
     </HomeAboutWrapper>
   </Section>
 );
@@ -62,6 +61,28 @@ const HomeAboutWrapper = styled(Wrapper)`
   @media ${mq.MOBILE} {
     align-items: center;
     display: flex;
+  }
+`;
+
+const ImageColumn = styled.div`
+  flex: 1;
+  margin-bottom: 30px;
+`;
+
+const CopyColumn = styled.div`
+  flex: 1;
+`;
+
+const CopyBlock = styled.div`
+  margin-bottom: 45px;
+`;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+
+  @media ${mq.MOBILE} {
+    justify-content: flex-start;
   }
 `;
 

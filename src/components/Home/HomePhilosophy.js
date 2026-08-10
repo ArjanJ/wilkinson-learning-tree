@@ -1,5 +1,4 @@
 import React from "react";
-import { Box } from "rebass";
 import styled from "styled-components";
 
 import { mq } from "../../utils/styleUtils";
@@ -28,19 +27,36 @@ export const philosophyIconList = [
 ];
 
 export const HomePhilosophy = () => (
-  <Box pt={["60px", 0]}>
+  <HomePhilosophySection>
     <Section>
       <HomePhilWrapper>
-        <Box flex={1} mb="30px">
+        <HeadingWrapper>
           <Heading>Our Philosophy</Heading>
-        </Box>
-        <Box flex={2}>
+        </HeadingWrapper>
+        <IconListWrapper>
           <IconList data={philosophyIconList} />
-        </Box>
+        </IconListWrapper>
       </HomePhilWrapper>
     </Section>
-  </Box>
+  </HomePhilosophySection>
 );
+
+const HomePhilosophySection = styled.div`
+  padding-top: 60px;
+
+  @media ${mq.MOBILE} {
+    padding-top: 0;
+  }
+`;
+
+const HeadingWrapper = styled.div`
+  flex: 1;
+  margin-bottom: 30px;
+`;
+
+const IconListWrapper = styled.div`
+  flex: 2;
+`;
 
 const Heading = styled.h2`
   font-size: 25px;

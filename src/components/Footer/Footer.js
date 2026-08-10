@@ -1,6 +1,5 @@
 import { Link } from "gatsby";
 import React from "react";
-import { Box } from "rebass";
 import styled from "styled-components";
 
 import { colors, easing, mq } from "../../utils/styleUtils";
@@ -9,17 +8,17 @@ import { Section } from "../Section/";
 import { Wrapper } from "../Wrapper/";
 
 export const Footer = () => (
-  <Box pt={["60px", "90px"]}>
+  <FooterContent>
     <Section as="footer">
       <Wrapper>
-        <Box mb="37px">
+        <LogoWrapper>
           <Logo />
-        </Box>
+        </LogoWrapper>
         <FooterNav>
           <FooterNavLink hideDesktop={true} to="#">
             Contact Us
           </FooterNavLink>
-          <Box>
+          <div>
             <FooterText href="tel:6045372396">(604) 537-2396</FooterText>
             <FooterText href="mailto:christine@wilkinsonlearningtree.com">
               christine@wilkinsonlearningtree.com
@@ -27,7 +26,7 @@ export const Footer = () => (
             <FooterText href="">
               10172 244th Street Maple Ridge, BC V2W 0H5
             </FooterText>
-          </Box>
+          </div>
           <FooterNavLink to="/services">Our Services</FooterNavLink>
           <FooterNavLink to="/about">About Us</FooterNavLink>
           <FooterNavLink to="/register">Register Now</FooterNavLink>
@@ -38,8 +37,20 @@ export const Footer = () => (
     <FooterBottom>
       <Wrapper>© Wilkinson Learning Tree {new Date().getFullYear()}</Wrapper>
     </FooterBottom>
-  </Box>
+  </FooterContent>
 );
+
+const FooterContent = styled.div`
+  padding-top: 60px;
+
+  @media ${mq.MOBILE} {
+    padding-top: 90px;
+  }
+`;
+
+const LogoWrapper = styled.div`
+  margin-bottom: 37px;
+`;
 
 const FooterNav = styled.nav`
   @media ${mq.MOBILE} {

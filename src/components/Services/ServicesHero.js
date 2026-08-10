@@ -1,6 +1,5 @@
 import { Link } from "gatsby";
 import React from "react";
-import { Box } from "rebass";
 import styled from "styled-components";
 
 import { colors, mq } from "../../utils/styleUtils";
@@ -29,37 +28,37 @@ const servicesIconList = [
 ];
 
 export const ServicesHero = () => (
-  <Box pt={["60px", "135px"]}>
+  <ServicesContent>
     <Section bottom={false}>
       <Wrapper>
         <PageHeading textAlign="center">Our Daycare Services</PageHeading>
         <Flex>
-          <Box flex={1} mb="45px">
+          <ServicesIntro>
             <p>
               At the Wilkinson Learning Tree family daycare, we believe that we
               can offer the best services in Maple Ridge when it comes to
               daycare for children between the ages of 1 and 5.
             </p>
-          </Box>
-          <Box flex={2} ml={[0, "90px"]} mb="45px">
+          </ServicesIntro>
+          <ServicesIconList>
             <IconList data={servicesIconList} />
-          </Box>
+          </ServicesIconList>
         </Flex>
         <Flex>
-          <AboutImgWrapper mb={["45px", "90px"]}>
+          <FeatureImage>
             <Image filename="05-wilkinson-daycare.jpg" />
-          </AboutImgWrapper>
-          <Box flex={1} ml={[0, "90px"]}>
-            <Box mb="30px">
+          </FeatureImage>
+          <ServiceCopy>
+            <IntroCopy>
               <p>
                 <BoldText>
                   Our days will be fun-filled through the use of different
                   engaging activities.{" "}
                 </BoldText>
               </p>
-            </Box>
-            <Box mb="45px">
-              <Box as="p" mb="45px">
+            </IntroCopy>
+            <ImageSection>
+              <CopyParagraph>
                 I’ll make sure that your child will be safe and secure within
                 our daycare and treat each child as if they were my own; no
                 matter what race, religion or gender. They’ll be treated with
@@ -67,41 +66,41 @@ export const ServicesHero = () => (
                 your child will feel at ease and at home. This will reduce any
                 anxiety or fear your child may have in a new environment.
                 Lastly, all members of our family will welcome your child.
-              </Box>
+              </CopyParagraph>
 
               <Image filename="06-wilkinson-daycare.jpg" />
-            </Box>
-          </Box>
+            </ImageSection>
+          </ServiceCopy>
         </Flex>
         <Flex>
-          <AboutImgWrapper mb="45px">
+          <AboutImgWrapper>
             <Image filename="07-wilkinson-daycare.jpg" />
           </AboutImgWrapper>
-          <Box flex={1} ml={[0, "90px"]}>
-            <Box mb="45px">
+          <ServiceCopy>
+            <ImageSection>
               <PageSubheading>Our Philosophy</PageSubheading>
-              <Box as="p" mb="30px">
+              <PhilosophyCopy>
                 “In the field of early childhood education we hold a certain set
                 of beliefs when it comes to the care and education of young
                 children... Our philosophy begins with our belief that educators
                 need to plan, implement, observe and evaluate activities for
                 children. It is through these activities that children learn...”
-              </Box>
+              </PhilosophyCopy>
 
-              <Box mb="45px">
+              <IconListWrapper>
                 <IconList data={philosophyIconList} />
-              </Box>
+              </IconListWrapper>
 
               <Image filename="08-wilkinson-daycare.jpg" />
-            </Box>
-          </Box>
+            </ImageSection>
+          </ServiceCopy>
         </Flex>
       </Wrapper>
-      <Box mb="60px" />
+      <SectionSpacer />
     </Section>
     <AboutPlug>
       <AboutPlugWrapper>
-        <AboutPlugImgWrapper flex={1} mb="45px">
+        <AboutPlugImgWrapper>
           <Image filename="04-conor-and-brody-wilkinson-learning-tree.png" />
         </AboutPlugImgWrapper>
         <AboutPlugLink to="/about">
@@ -109,13 +108,76 @@ export const ServicesHero = () => (
         </AboutPlugLink>
       </AboutPlugWrapper>
     </AboutPlug>
-  </Box>
+  </ServicesContent>
 );
+
+const ServicesContent = styled.div`
+  padding-top: 60px;
+
+  @media ${mq.MOBILE} {
+    padding-top: 135px;
+  }
+`;
 
 const Flex = styled.div`
   @media ${mq.MOBILE} {
     display: flex;
   }
+`;
+
+const ServicesIntro = styled.div`
+  flex: 1;
+  margin-bottom: 45px;
+`;
+
+const ServicesIconList = styled.div`
+  flex: 2;
+  margin-bottom: 45px;
+
+  @media ${mq.MOBILE} {
+    margin-left: 90px;
+  }
+`;
+
+const FeatureImage = styled.div`
+  flex: 1;
+  margin-bottom: 45px;
+
+  @media ${mq.MOBILE} {
+    margin-bottom: 90px;
+  }
+`;
+
+const ServiceCopy = styled.div`
+  flex: 1;
+
+  @media ${mq.MOBILE} {
+    margin-left: 90px;
+  }
+`;
+
+const IntroCopy = styled.div`
+  margin-bottom: 30px;
+`;
+
+const ImageSection = styled.div`
+  margin-bottom: 45px;
+`;
+
+const CopyParagraph = styled.p`
+  margin-bottom: 45px;
+`;
+
+const PhilosophyCopy = styled.p`
+  margin-bottom: 30px;
+`;
+
+const IconListWrapper = styled.div`
+  margin-bottom: 45px;
+`;
+
+const SectionSpacer = styled.div`
+  margin-bottom: 60px;
 `;
 
 const BoldText = styled.strong`
@@ -141,6 +203,9 @@ const AboutPlugWrapper = styled(Wrapper)`
 `;
 
 const AboutPlugImgWrapper = styled.div`
+  flex: 1;
+  margin-bottom: 45px;
+
   > div {
     border-radius: 50%;
     height: 90px;
@@ -156,8 +221,9 @@ const AboutPlugLink = styled(Link)`
   text-decoration: none;
 `;
 
-const AboutImgWrapper = styled(Box)`
+const AboutImgWrapper = styled.div`
   flex: 1;
+  margin-bottom: 45px;
   > div {
     max-height: 180px;
 
