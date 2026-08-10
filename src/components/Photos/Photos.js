@@ -1,9 +1,9 @@
-import { Gallery } from "gatsby-theme-gallery";
 import React from "react";
 import { Box } from "rebass";
 import styled from "styled-components";
 
 import { mq } from "../../utils/styleUtils";
+import Gallery from "./Gallery";
 import { PageHeading } from "../PageHeading/PageHeading";
 import { Section } from "../Section/Section";
 
