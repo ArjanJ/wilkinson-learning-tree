@@ -1,5 +1,4 @@
 import React from "react";
-import { Box } from "rebass";
 import styled from "styled-components";
 
 import { mq } from "../../utils/styleUtils";
@@ -8,15 +7,23 @@ import { PageHeading } from "../PageHeading/PageHeading";
 import { Section } from "../Section/Section";
 
 export const Photos = () => (
-  <Box pt={["60px", "135px"]}>
+  <PhotosContent>
     <Section>
       <PageHeading textAlign="center">Photos</PageHeading>
       <Wrapper>
         <Gallery />
       </Wrapper>
     </Section>
-  </Box>
+  </PhotosContent>
 );
+
+const PhotosContent = styled.div`
+  padding-top: 60px;
+
+  @media ${mq.MOBILE} {
+    padding-top: 135px;
+  }
+`;
 
 const Wrapper = styled.div`
   @media ${mq.MOBILE} {

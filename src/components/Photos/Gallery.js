@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
 import styled from "styled-components";
 
@@ -15,15 +15,15 @@ const Gallery = () => {
           name
           publicURL
           childImageSharp {
-            fluid(maxWidth: 1140) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 1140, layout: CONSTRAINED)
           }
         }
       }
     }
   `);
-  const images = data.allFile.nodes.filter(image => image.childImageSharp);
+  const images = data.allFile.nodes
+    .map(image => ({ ...image, imageData: getImage(image) }))
+    .filter(image => image.imageData);
   const [selectedIndex, setSelectedIndex] = React.useState(null);
   const selectedImage =
     selectedIndex === null ? null : images[selectedIndex];
@@ -50,7 +50,7 @@ const Gallery = () => {
             onClick={() => setSelectedIndex(index)}
             type="button"
           >
-            <Img alt={image.name} fluid={image.childImageSharp.fluid} />
+            <GatsbyImage alt={image.name} image={image.imageData} />
           </Thumbnail>
         ))}
       </Grid>

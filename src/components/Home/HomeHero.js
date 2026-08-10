@@ -1,6 +1,5 @@
 import { Link } from "gatsby";
 import React from "react";
-import { Box, Flex } from "rebass";
 import scrollToElement from "scroll-to-element";
 import styled from "styled-components";
 
@@ -23,16 +22,16 @@ export const HomeHero = () => (
     <HomeWrapper>
       <HomeInnerWrapper>
         <HomeText>
-          <Box mb="45px">
+          <HeroCopy>
             <HomeHeading>Welcome to the Wilkinson Learning Tree</HomeHeading>
             <Subheading>
               We’re a family daycare in <strong>Maple Ridge</strong>{" "}
               specializing in care for children between{" "}
               <strong>1 and 5 years old</strong>.
             </Subheading>
-          </Box>
+          </HeroCopy>
           <HomeButtons>
-            <Box mb="15px">
+            <PrimaryButtonWrapper>
               <Button
                 kind="primary"
                 onClick={onGetInTouchClick}
@@ -41,15 +40,15 @@ export const HomeHero = () => (
               >
                 Get in touch
               </Button>
-            </Box>
-            <Box>
+            </PrimaryButtonWrapper>
+            <SecondaryButtonWrapper>
               <Button as={Link} kind="secondary" to="/services" width="196px">
                 About our daycare
               </Button>
-            </Box>
+            </SecondaryButtonWrapper>
           </HomeButtons>
         </HomeText>
-        <HomeImg ml="135px">
+        <HomeImg>
           <Image
             alt="Child playing with toy plane."
             filename="brody-blob-wilkinson-learning-tree.png"
@@ -79,7 +78,7 @@ const HomeWrapper = styled(Wrapper)`
   }
 `;
 
-const HomeInnerWrapper = styled(Flex)`
+const HomeInnerWrapper = styled.div`
   display: block;
 
   @media ${mq.MOBILE} {
@@ -106,22 +105,27 @@ const Subheading = styled.h2`
   }
 `;
 
-const HomeText = styled(Box)`
+const HomeText = styled.div`
   @media ${mq.MOBILE} {
     flex: 1;
   }
 `;
 
-const HomeImg = styled(Box)`
+const HomeImg = styled.div`
   display: none;
 
   @media ${mq.MOBILE} {
     display: block;
     flex: 1;
+    margin-left: 135px;
   }
 `;
 
-const HomeButtons = styled(Box)`
+const HeroCopy = styled.div`
+  margin-bottom: 45px;
+`;
+
+const HomeButtons = styled.div`
   display: block;
 
   @media ${mq.MOBILE} {
@@ -132,3 +136,9 @@ const HomeButtons = styled(Box)`
     }
   }
 `;
+
+const PrimaryButtonWrapper = styled.div`
+  margin-bottom: 15px;
+`;
+
+const SecondaryButtonWrapper = styled.div``;

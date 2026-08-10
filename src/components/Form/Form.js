@@ -1,6 +1,5 @@
 import { darken, lighten } from "polished";
 import React from "react";
-import { Box } from "rebass";
 import styled from "styled-components";
 
 import { colors, easing, mq } from "../../utils/styleUtils";
@@ -18,15 +17,15 @@ export const Form = () => (
     <input type="hidden" name="bot-field" />
     <Background>
       <FormWrapper>
-        <Box flex={1} mb="22px">
+        <FormIntro>
           <Heading>Get in touch!</Heading>
-          <Box mb={[0, "30px"]}>
+          <IntroCopy>
             <Subheading>
               We look forward to welcoming you to our daycare and caring for
               your child. We’ll be in touch with you as soon as possible, thank
               you.
             </Subheading>
-          </Box>
+          </IntroCopy>
           <FormDesktopMoreCopy>
             <Subheading>
               If you prefer to contact us directly, feel free to call{" "}
@@ -41,9 +40,9 @@ export const Form = () => (
               </strong>
             </Subheading>
           </FormDesktopMoreCopy>
-        </Box>
-        <Box flex={1} ml={[0, "90px"]}>
-          <Box mb={["22px", "30px"]}>
+        </FormIntro>
+        <FormFields>
+          <FormField>
             <Label htmlFor="name">Name</Label>
             <Input
               id="name"
@@ -52,8 +51,8 @@ export const Form = () => (
               required={true}
               type="text"
             />
-          </Box>
-          <Box mb={["22px", "30px"]}>
+          </FormField>
+          <FormField>
             <Label htmlFor="email">Email</Label>
             <Input
               id="email"
@@ -62,8 +61,8 @@ export const Form = () => (
               required={true}
               type="email"
             />
-          </Box>
-          <Box mb={["22px", "30px"]}>
+          </FormField>
+          <FormField>
             <Label htmlFor="phone">Phone Number</Label>
             <Input
               id="phone"
@@ -74,8 +73,8 @@ export const Form = () => (
               required={true}
               type="text"
             />
-          </Box>
-          <Box mb={["30px", "45px"]}>
+          </FormField>
+          <ChildCountField>
             <Legend>Number of children needing daycare</Legend>
             <RadioWrapper>
               <RadioBox>
@@ -115,11 +114,11 @@ export const Form = () => (
                 <RadioLabel htmlFor="numberOfChildren4+">4+</RadioLabel>
               </RadioBox>
             </RadioWrapper>
-          </Box>
+          </ChildCountField>
           <Button kind="primary" type="submit" width="100%">
             Contact us
           </Button>
-        </Box>
+        </FormFields>
       </FormWrapper>
     </Background>
   </form>
@@ -137,6 +136,41 @@ const Background = styled.div`
 const FormWrapper = styled(Wrapper)`
   @media ${mq.MOBILE} {
     display: flex;
+  }
+`;
+
+const FormIntro = styled.div`
+  flex: 1;
+  margin-bottom: 22px;
+`;
+
+const IntroCopy = styled.div`
+  @media ${mq.MOBILE} {
+    margin-bottom: 30px;
+  }
+`;
+
+const FormFields = styled.div`
+  flex: 1;
+
+  @media ${mq.MOBILE} {
+    margin-left: 90px;
+  }
+`;
+
+const FormField = styled.div`
+  margin-bottom: 22px;
+
+  @media ${mq.MOBILE} {
+    margin-bottom: 30px;
+  }
+`;
+
+const ChildCountField = styled.div`
+  margin-bottom: 30px;
+
+  @media ${mq.MOBILE} {
+    margin-bottom: 45px;
   }
 `;
 
@@ -193,7 +227,7 @@ const RadioWrapper = styled.div`
   display: flex;
 `;
 
-const RadioBox = styled(Box)`
+const RadioBox = styled.div`
   flex: 1;
 
   &:first-child {
@@ -234,7 +268,7 @@ const RadioInput = styled.input`
   }
 `;
 
-const FormDesktopMoreCopy = styled(Box)`
+const FormDesktopMoreCopy = styled.div`
   display: none;
 
   @media ${mq.MOBILE} {
