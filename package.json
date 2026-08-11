@@ -80,6 +80,7 @@
     "http-cache-semantics": "4.1.1",
     "picomatch": "2.3.2",
     "immer": "9.0.6",
+    "js-yaml": "3.15.1",
     "http-proxy-middleware": "file:patches/http-proxy-middleware",
     "ip": "file:patches/ip",
     "@graphql-tools/url-loader": {
@@ -117,6 +118,7 @@
     "path-to-regexp": "0.1.13",
     "http-cache-semantics": "4.1.1",
     "picomatch": "2.3.2",
-    "ip": "file:patches/ip"
+    "ip": "file:patches/ip",
+    "js-yaml": "3.15.1"
   }
 }
