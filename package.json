@@ -57,6 +57,9 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "overrides": {
+    "@ardatan/relay-compiler": {
+      "immutable": "4.3.9"
+    },
     "eventsource": "1.1.1",
     "ansi-html": "0.0.8",
     "parse-url": "8.1.0",
