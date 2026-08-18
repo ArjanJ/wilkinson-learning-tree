@@ -24,7 +24,6 @@
     "memory-fs": "^0.4.1",
     "mime": "^2.4.4",
     "mkdirp": "^0.5.1",
-    "range-parser": "^1.2.1",
-    "webpack-log": "^2.0.0"
+    "range-parser": "^1.2.1"
   }
 }

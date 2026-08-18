@@ -5,7 +5,7 @@ const path = require('path');
 
 const MemoryFileSystem = require('memory-fs');
 const mkdirp = require('mkdirp');
-const { colors } = require('webpack-log');
+const { colors } = require('./logger');
 
 const DevMiddlewareError = require('./DevMiddlewareError');
 

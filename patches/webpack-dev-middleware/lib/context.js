@@ -1,6 +1,6 @@
 'use strict';
 
-const weblog = require('webpack-log');
+const weblog = require('./logger');
 
 module.exports = function ctx(compiler, options) {
   const context = {

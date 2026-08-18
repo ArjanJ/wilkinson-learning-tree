@@ -94,6 +94,7 @@
     "ws": "7.5.11",
     "gatsby": {
       "socket.io-parser": "4.2.6",
+      "uuid": "14.0.0",
       "webpack-dev-middleware": "$webpack-dev-middleware"
     },
     "gatsby-plugin-manifest": {
