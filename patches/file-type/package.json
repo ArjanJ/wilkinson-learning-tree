@@ -1,0 +1,16 @@
+{
+  "name": "file-type",
+  "version": "21.3.2",
+  "description": "CommonJS compatibility wrapper around file-type 21.3.2",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "file-type-esm": "npm:file-type@21.3.2"
+  }
+}

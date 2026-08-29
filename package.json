@@ -18,6 +18,7 @@
     "gatsby-plugin-theme-ui": "^0.17.4",
     "gatsby-source-filesystem": "^5.16.0",
     "gatsby-transformer-sharp": "^5.16.0",
+    "file-type": "file:patches/file-type",
     "http-proxy-middleware": "file:patches/http-proxy-middleware",
     "ip": "file:patches/ip",
     "polished": "^3.4.1",
@@ -101,6 +102,7 @@
     "picomatch": "2.3.2",
     "immer": "9.0.6",
     "js-yaml": "3.15.1",
+    "file-type": "$file-type",
     "http-proxy-middleware": "file:patches/http-proxy-middleware",
     "ip": "file:patches/ip",
     "@graphql-tools/url-loader": {
@@ -149,6 +151,7 @@
     "http-cache-semantics": "4.1.1",
     "picomatch": "2.3.2",
     "ip": "file:patches/ip",
+    "file-type": "file:patches/file-type",
     "js-yaml": "3.15.1"
   }
 }
