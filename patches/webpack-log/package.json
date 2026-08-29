@@ -1,0 +1,21 @@
+{
+  "name": "webpack-log",
+  "version": "2.0.0",
+  "description": "A common logger for the webpack ecosystem",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">= 6"
+  },
+  "dependencies": {
+    "ansi-colors": "^3.0.0",
+    "uuid": "^11.1.1"
+  },
+  "author": "Andrew Powell <andrew@shellscape.org>",
+  "issues": "https://github.com/webpack-contrib/webpack-log/issues",
+  "homepage": "https://github.com/webpack-contrib/webpack-log#readme",
+  "repository": "https://github.com/webpack-contrib/webpack-log.git",
+  "license": "MIT"
+}
