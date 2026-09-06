@@ -7,6 +7,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
+    "decode-uri-component": "file:patches/decode-uri-component",
     "gatsby": "^5.16.0",
     "gatsby-plugin-google-analytics": "^5.16.0",
     "gatsby-plugin-image": "^3.16.0",
@@ -86,6 +87,7 @@
     "serialize-javascript": "$serialize-javascript",
     "form-data": "4.0.6",
     "@babel/plugin-transform-modules-systemjs": "7.29.4",
+    "decode-uri-component": "$decode-uri-component",
     "braces": "3.0.3",
     "lodash": "4.18.1",
     "minimatch": "3.1.4",
