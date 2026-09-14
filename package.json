@@ -104,7 +104,7 @@
     "http-cache-semantics": "4.1.1",
     "picomatch": "2.3.2",
     "immer": "9.0.6",
-    "js-yaml": "3.15.1",
+    "js-yaml": "3.15.2",
     "file-type": "$file-type",
     "http-proxy-middleware": "file:patches/http-proxy-middleware",
     "ip": "file:patches/ip",
@@ -155,6 +155,6 @@
     "picomatch": "2.3.2",
     "ip": "file:patches/ip",
     "file-type": "file:patches/file-type",
-    "js-yaml": "3.15.1"
+    "js-yaml": "3.15.2"
   }
 }
